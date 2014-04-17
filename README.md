@@ -43,16 +43,33 @@ I ended up playing a lot with the spam function on this project. It became the m
 
 Before the entry even hits the spam filter:
 
-1) All white space and special characters are stripped out from the text entry.
+>1) All white space and special characters are stripped out from the text entry.
 
-2) All characters are converted to lowercase characters
+>2) All characters are converted to lowercase characters
 
-3) An Md5 hash is created from the new lowercase, no white space, no special charcter string.
+>3) An Md5 hash is created from the new lowercase, no white space, no special charcter string.
 
-4) That MD5 hash is checked against the database to see if it already exists.
+>4) That MD5 hash is checked against the database to see if it already exists.
 
-5) If the MD5 does not exist, the original string (not the modified one) is sent off to the spam function for further checking
+>5) If the MD5 does not exist, the original string (not the modified one) is sent off to the spam function for further checking
+
+Once it reaches the spam filter:
+
+>1) The original string is once again converted to all lowercase letters
+
+>2) The entry string is compared against an english dictionary to see how many words dont appear in the english dictionary to get its "word score"
+
+>3) The entry string is then compared againse a dictionary of vulgarity. However many vulgar words occur is its "vulgarity score"
+
+>4) Then the # of occurances of characters and checks to see if they are near expected tolerances. Each time a set of characters is out of the expected range, that is one ticket to the "Character score". for example, this is to prevent something like "ljkahsdlfjhaslkdfjhsldkjfh".
+
+>5) All of the three scores (spam, vulgarity, and character) are added together for a spam score
+
+>6) The spam score that allows an entry is different based on the number of words.
+
+If the entry passes the spam tolerances, its added to the Database and will show up in random entries. An entry that fails the spam check is still entered into the Database, but will now display.
 
 
+The spam filter is not perfect, but it does help stop some spam.
 
 
