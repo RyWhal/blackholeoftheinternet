@@ -41,5 +41,18 @@ Spam Function
 =============
 I ended up playing a lot with the spam function on this project. It became the more entertaining part of the whole thing.
 
-How it works:
+Before the entry even hits the spam filter:
+
+1) All white space and special characters are stripped out from the text entry.
+
+2) All characters are converted to lowercase characters
+
+3) An Md5 hash is created from the new lowercase, no white space, no special charcter string.
+
+4) That MD5 hash is checked against the database to see if it already exists.
+
+5) If the MD5 does not exist, the original string (not the modified one) is sent off to the spam function for further checking
+
+
+
 
