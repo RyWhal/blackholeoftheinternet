@@ -72,4 +72,28 @@ If the entry passes the spam tolerances, its added to the Database and will show
 
 The spam filter is not perfect, but it does help stop some spam.
 
+CLI Blackhole
+=============
+
+To Get a random entry:
+$> curl blackholeoftheinternet.com/api/get.php
+
+To Set an entry:
+$> curl -F "submission=Clever Entry" -F "name=Your Name" blackholeoftheinternet.com/api/set.php
+
+*note the "name" field is not required
+```
+rwhalen-mbp:~ rwhalen$ curl blackholeoftheinternet.com/api/get.php
+"Bill gates is god"
+- Anonymous
+rwhalen-mbp:~ rwhalen$
+```
+
+```
+rwhalen-mbp:~ rwhalen$ curl -F "submission=I'm doin it for the Man Pages" -F "name=RyWhal" blackholeoftheinternet.com/api/set.php
+rwhalen-mbp:~ rwhalen$
+```
+*no response from the set means success
+
+
 
