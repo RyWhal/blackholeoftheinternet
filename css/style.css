@@ -1,0 +1,138 @@
+a { 
+	color: #FFFFFF;
+        text-shadow: 1px 2px 3px #A0A0A0;
+        margin: 0;
+        padding: 5px 0;
+
+
+}
+
+h1 {
+	font: 50px normal Georgia, 'Times New Roman', Times, serif;
+	color: #FFFFFF;
+	text-shadow: 1px 2px 3px #A0A0A0;
+	margin: 0;
+	text-align: center;
+	padding: 5px 0;
+	
+}
+
+h6 {
+        font: 35px normal Georgia, 'Times New Roman', Times, serif;
+        color: #FFFFFF;
+	text-shadow: 1px 2px 3px #A0A0A0;
+        margin: 0;
+        text-align: center;
+        padding: 5px 0;
+
+}
+
+h7 {
+        font: 25px normal Georgia, 'Times New Roman', Times, serif;
+        color: #FFFFFF;
+        text-shadow: 1px 2px 3px #A0A0A0;
+        margin: 0;
+        text-align: center;
+        padding: 5px 0;
+
+}
+
+#submission{
+	font: Verdana;
+	width: 500px;
+	height:150px;
+	color: black;
+	margin-right: auto;
+	margin-left:  auto;
+	margin-top:50px;
+}
+
+#query{
+        font: Verdana;
+        width: 500px;
+        height:150px;
+	color: black;
+        margin-right: auto;
+        margin-left:  auto;
+        margin-top:50px;
+}
+
+#query_input{
+	width:400px;
+	position: left;
+	
+}
+
+#query_submit{
+	width:100px;
+	position: right;
+}
+
+.about{
+	font: 18px normal Georgia, 'Times New Roman', Times, serif;
+        color: #B8B8B8;
+        width: 650px;
+        height:400px;
+	background: #303030;
+	shadow: 1px 2px 3px #A0A0A0;
+	border: 1px solid #282828;
+	border-radius: 10px 10px 10px 10px;
+        margin-right: auto;
+        margin-left:  auto;
+        margin-top:10px;
+	text-align: center;
+}
+
+.links{
+	width: 250px;
+        height:30px;
+        color: grey;
+        margin-right: auto;
+        margin-left:  auto;
+        margin-top:100px;
+	margin-bottom:50px;
+
+}
+
+.links_main{
+	width: 350px;
+        height:30px;
+        color: grey;
+        margin-right: auto;
+        margin-left:  auto;
+        margin-top:100px;
+        margin-bottom:50px;
+}
+
+
+.response2{
+	color: #B8B8B8;
+        width: 650px;
+        height:425px;
+        background: #303030;
+        shadow: 1px 2px 3px #A0A0A0;
+        border: 1px solid #282828;
+        border-radius: 10px 10px 10px 10px;
+        margin-right: auto;
+        margin-left:  auto;
+        margin-top:10px;
+        text-align: center;
+
+}
+
+.random_text{
+	width: 640px;
+	height: 333px;
+	margin-bottom: 5px;
+	margin-top: 2px;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+
+.random_button{
+	margin-bottom: 5px;
+	margin-top: 2px;	
+	margin-right: auto;
+        margin-left:  auto;
+}
