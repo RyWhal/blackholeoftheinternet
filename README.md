@@ -1,6 +1,10 @@
 blackholeoftheinternet
 ======================
 
+**Blackholeoftheinternet is currently down and I have no intentenions of bringing it back up**
+
+
+
 Blackhole of the Internet is a quick and dirty project that I decided to work on over a weekend a while back. I wondered what people would write if you gave them a empty text box with no prompt. And then you give them back something that someone else has said. And that was it.
 
 Be warned, there is some vulgarity on bloackholeoftheinternet.com. Also, to aid in some basic spam filtering, there is a dictionary of vulgarity in the vars.php file. So if you don't want to see dirty words, dont look in that file.
